@@ -1,0 +1,441 @@
+*{
+    font-family: 'montserrat';
+    box-sizing: border-box;
+    overflow-x: none;
+    overflow:none;
+
+}
+:root{
+    --red:orangered;
+}
+body{
+    margin: 0;
+    padding: 0;
+   
+    width: 100%;
+    height:100vh;
+    background-color: black;
+    /* background-image: url('./aaaa.jpg'); */
+    /* background-image:url('./food.png'); */
+
+    background-size: cover;
+    background-position: center;
+    max-width: 1300px;
+    overflow-x: none;
+ 
+    
+
+}
+
+section.disable{
+    pointer-events: none;
+}
+.menulist{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    position:absolute;
+    top:0;
+    left: 0;
+    z-index: 40;
+    background: rgba(0, 0, 0, 0.384);
+    backdrop-filter: blur(20px);
+    transform: translateY(-100%);
+    transition: 2s;
+    pointer-events: none;
+    /* clip-path: circle(5% at 96% 4% ); */
+   
+}
+
+.menulist.slidedown{
+    position: fixed;
+    transform: translateY(0%);
+    /* clip-path: circle(150% at 96% 4% ); */
+}
+.menulist h2 a{
+    color: white ;
+    list-style-type: none;
+    text-decoration: none;
+}
+
+.navigation-bar{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-basis: 100%;
+    width:100%;
+    height: 50px;
+    padding: 30px;
+    margin: 0;
+    background-color: var(--red);
+    z-index: 200;
+    backdrop-filter: blur(10px);
+
+
+}
+.navigation-bar .logo{
+  
+    font-size: 1.5rem;
+    font-weight: 800;
+    font-style: italic;
+
+    color: white;
+}
+
+.navigation-bar .menu {
+    position: relative;
+    width:30px;
+    height: 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    z-index: 800;
+}
+
+.navigation-bar .menu span{
+    width:30px;
+    height: 4px;
+   background-color: white;
+    border-radius: 1px;
+    transition: 0.5s;
+}
+
+/* ---cancel Class ---------- */
+.menu.cancel{
+   
+    transition:0.3s ;
+}
+.menu.cancel .m1{
+    
+    transform: rotate(45deg) translate(5px,10px);
+    background-color: rgb(255, 255, 255);
+    border-radius: 3px;
+    
+}
+.menu.cancel .m2{
+    transform:  translate(-0px,0px);
+    width:2px;
+    opacity: 0;
+    background-color: rgb(255, 255, 255);
+}
+.menu.cancel .m3{
+    
+    transform: rotate(-45deg) translate(5px,-10px);
+    background-color: rgb(255, 255, 255);
+    border-radius: 3px;
+
+}
+
+
+
+/* menu animation class */
+
+
+
+
+
+
+
+
+
+
+/* section 1 -------------------------------------------- */
+/* mobile */
+
+
+.section1{
+    width:100%;
+    height:calc(100vh - 50px);
+    /* background-color: rgba(255, 255, 255, 0); */
+    background-image: url('./foo.png');
+    background-size: cover;
+  
+
+
+    margin: 0;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: left;
+    flex-direction: column;
+
+    overflow-y: hidden;
+    /* clip-path: circle( 150% at 1rem 1rem ); */
+    /* animation: clip 3.5s  ease-in-out; */
+    /* clip-path: inset(10% at 1rem 1rem); */
+    /* mix-blend-mode: screen; */
+}
+@keyframes clip{
+    0%{
+    clip-path: circle( 0% at 1rem 1rem );
+
+    }
+    100%{
+        clip-path: circle( 150% at 1rem 1rem );
+    
+        }
+
+}
+.section1 h1{
+    font-size: 2rem;
+    color: rgb(255, 255, 255);
+    margin:0;
+}
+.section1 h3{
+    display:block;
+    background-color: rgb(255, 255, 255);
+    color: orangered;
+    border:2px solid white;
+    border-radius: 2rem;
+    margin-top: 1rem;
+    padding: 1rem 2.5rem;
+    width:fit-content;
+    transition: ease-in-out 0.5s ;
+    cursor: pointer;
+    
+}
+.section1 h3:hover{
+    border:2px solid rgba(255, 68, 0, 0);
+    background-color: rgb(255, 255, 255);
+    color: rgb(255, 72, 0);
+    box-shadow: 5px 5px 20px rgba(255, 255, 255, 0.774),-5px -5px 20px rgba(255, 255, 255, 0.774);
+
+
+}
+/* .section1 .image{
+    background-image:  url('./aaaa.jpg');
+    width:800px;
+    height:800px;
+    background-size: contain;
+    position: absolute;
+    top:50%;
+    transform: translate(0,-30%) rotate(45deg);
+    right:-20%;
+    border-radius: 4rem;
+    z-index: 0;
+} */
+
+
+
+
+
+/* --------------------------------------- */
+.section2 {
+    width: 100%;
+    height: 100vh;
+    max-height: fit-content;
+    background: rgb(255, 255, 255);
+    margin: 0 0 ;
+    padding: 0rem 2rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    overflow-x:none;
+    overflow-y: none;
+
+}
+@media (min-width:720px){
+    .section2 .cards{
+        flex-direction: row;
+    }
+}
+.section2 h1{
+    color: orangered;
+    font-size: 2rem;
+    margin-top: 2rem;
+
+    
+
+}
+
+.section2 .cards{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-bottom: 2rem;
+
+}
+
+.card1,.card2,.card3{
+    background: rgb(255, 255, 255);
+    margin: .5rem 0 ;
+    padding:1rem;
+    border-radius: 10px;
+    color: rgb(0, 0, 0);
+    --shadow:rgba(0, 0, 0, 0.034);
+    box-shadow: 5px 5px 10px var(--shadow) ;
+}
+
+.cards h4{
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+
+
+
+.section3 {
+    width: 100%;
+    height: 100vh;
+    background: white;
+    margin: 0;
+    padding: 1rem 2rem;
+    display: flex;
+    /* justify-content: space-around; */
+    align-items: center;
+    flex-direction: column;
+    overflow-x:none;
+
+
+
+}
+
+.section3 h1{
+    color: orangered;
+    font-size: 2rem;
+   
+    
+
+}
+.section3 h4{
+    font-weight: 500; 
+}
+.section4 {
+    position: relative;
+    width: 100%;
+    height:100vh;
+    background: white;
+    margin: 0;
+    padding: 1rem 2rem;
+    display: flex;
+    /* justify-content: space-around; */
+    align-items: center;
+    flex-direction: column;
+    z-index: 9;
+
+
+}
+
+.section4 h1{
+    color: orangered;
+    font-size: 2rem;
+    font-weight: 900;
+    
+
+}
+.contacts{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+
+}
+.contact{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    width: 100%;
+    margin-top: 3rem;
+}
+.icon{
+    width:30px;
+    height:30px;
+    background-color: orangered;
+    margin-right: 2rem;
+    border-radius: 50%;
+   
+
+}
+
+
+.cta{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position:fixed;
+    bottom: 0;
+    left: 0%;
+    margin: 0.7rem 0.7rem;
+    width: 58px;
+    height: 58px;
+    opacity: 1;
+    z-index: 10;
+    background-color: orangered;
+    box-shadow: 2px 2px 5px  rgba(255, 147, 108, 0.589),-2px -2px 5px  rgba(255, 144, 104, 0.521);
+    border-radius: 29px;
+    color: white;
+    animation: ctaa 3s infinite;
+    transition: ease-in-out 1s;
+   
+
+}
+
+.cta h3{
+    display: none;
+    transition-delay: 0.3s;
+    font-size: 0.8rem;
+}
+
+
+
+
+.cta.bottom{
+width:90%;
+left:50%;
+bottom: 0;
+transform:translateX(-50%) ;
+margin:1rem 0;
+padding: 0;
+
+}
+.cta.bottom h3{
+    display: inline;
+    padding: 0;
+    margin: 0;
+    transition-delay: -0.5s;
+}
+
+
+
+.sac{
+   
+    filter: invert(100);
+}
+.sac:hover{
+    box-shadow: 5px 5px 10px orangered;
+}
+
+.line1{
+    animation: 2s anim infinite ease-in-out;
+}
+.line2{
+    animation: 2s anim infinite ease-in-out;
+    animation-delay: 0.2s;
+}
+.line3{
+    animation: 2s anim infinite ease-in-out;
+    animation-delay: 0.4s;
+}
+.line4{
+    animation: 2s anim infinite ease-in-out;
+    animation-delay: 0.6s;
+
+}
+
+@keyframes anim{
+    0%{
+        width:0;
+    }
+    100%{
+        width:25.234px;
+    }
+}
