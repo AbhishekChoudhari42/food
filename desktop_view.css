@@ -42,4 +42,38 @@
         display: none;
         
     }
+
+
+
+
+ 
+}
+
+@media (min-width:860px) {
+
+
+    .section2 .cards{
+        margin: 0;
+        display: flex;
+        padding: 1rem;
+        width: 80vw;
+        min-width: fit-content;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: top;
+       
+      
+    }
+
+    .card1,.card2,.card3{
+        height: 50vh;
+        width: 20vw;
+        min-width: fit-content;
+       
+        margin: 0 .2rem;
+    
+       
+        
+    }
+
 }
