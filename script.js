@@ -10,14 +10,10 @@ console.log(menu)
 menu.addEventListener('click',function(){
     menu.classList.toggle('cancel')
     menulist.classList.toggle('slidedown')
-    // document.body.classList.toggle('disable');
     sec.classList.toggle('disable')
-    
-    
-    console.log('cancel')
 })
 
-// 
+
 
 
 const tl = gsap.timeline({default:{duration:1}});
@@ -25,7 +21,7 @@ const tt = gsap.timeline({default:{duration:1}});
 
 
 
-tl.from(".navigation-bar .logo,.navigation-bar .menu",1,{transform:'translate(0,-100%)',opacity:0})
+tl.from(".navigation-bar .logo,.navigation-bar .menu,.menulist-desktop",1,{transform:'translate(0,-100%)',opacity:0})
 .from(".section1 h1",0.5,{transform:'translate(0,-10%)',ease:Power4.easeIn,opacity:0})
 .from(".section1 h3",0.5,{transform:'translate(0,-10%)',ease:Power4.easeIn,opacity:0})
 

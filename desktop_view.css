@@ -1,0 +1,45 @@
+@media (min-width:720px) {
+    .menulist-desktop{
+        position: absolute;
+        right: 2rem;
+        width: 50vw;
+        max-width: fit-content;
+        max-width: 500px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        
+    }
+    .menulist-desktop h2{
+
+        font-size: 1rem;
+       
+      
+
+    } 
+    .menulist-desktop a{
+        position: relative;
+        padding: 0.2rem 0.3rem;
+        transition: 0.4s;
+        border-bottom: 2px solid rgba(0, 0, 0, 0);
+
+        
+    }
+    .menulist-desktop h2:hover a{
+    
+        /* background-color: rgb(255, 94, 0); */
+        /* border-radius: 2rem; */
+        color: rgb(255, 255, 255);
+        /* text-decoration: underline; */
+        border-bottom: 2px solid white;
+
+    }
+    .menu{
+        display: none;
+
+    }
+    .menu span{
+        display: none;
+        
+    }
+}
