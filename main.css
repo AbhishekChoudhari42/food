@@ -12,7 +12,7 @@ html{
 }
 /*  */
 :root{
-    --red:orangered;
+    --primary:orangered;
 }
 body{
     position: relative;
@@ -46,12 +46,16 @@ section.disable{
     top:0;
     left: 0;
     z-index: 40;
-    background: orangered;
+    background: var(--primary);
     /* backdrop-filter: blur(20px); */
     transform: translateY(-100%);
     transition: 2s;
    
 }
+.menulist.delay{
+    transition-delay: 0.5s;
+}
+
 .menulist-desktop{
     display: none;
     
@@ -64,6 +68,7 @@ section.disable{
 .menulist.slidedown{
     position: fixed;
     transform: translateY(0%);
+   
 }
 
 
@@ -75,7 +80,10 @@ section.disable{
 }
 
 .navigation-bar{
-    position: relative;
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -84,10 +92,11 @@ section.disable{
     height: 50px;
     padding: 30px;
     margin: 0;
-    background-color: var(--red);
+    background-color: var(--primary);
     z-index: 200;
     backdrop-filter: blur(10px);
-    box-shadow: 5px 0 15px rgba(0, 0, 0, 0.514);
+    box-shadow: 5px 0 15px rgba(0, 0, 0, 0.214);
+    transition: 0.5s;
 
 
 }
@@ -126,7 +135,7 @@ section.disable{
 }
 .menu.cancel .m1{
     
-    transform: rotate(45deg) translate(5px,8px);
+    transform: rotate(45deg) translate(5px,7.5px);
     background-color: rgb(255, 255, 255);
     border-radius: 3px;
     
@@ -139,7 +148,7 @@ section.disable{
 }
 .menu.cancel .m3{
     
-    transform: rotate(-45deg) translate(5px,-8px);
+    transform: rotate(-45deg) translate(5px,-7.5px);
     background-color: rgb(255, 255, 255);
     border-radius: 3px;
 
@@ -160,7 +169,7 @@ section.disable{
 /*================== hero section ========================*/
 .section1{
     width:100%;
-    height:calc(100vh - 50px);
+    height:calc(100vh);
     /* background-color: rgba(255, 255, 255, 0); */
     background-image: url('./foo.png');
     background-size: cover;
@@ -186,7 +195,7 @@ section.disable{
 .section1 h3{
     display:block;
     background-color: rgb(255, 255, 255);
-    color: orangered;
+    color: var(--primary);
     border:2px solid white;
     border-radius: 2rem;
     margin-top: 1rem;
@@ -199,7 +208,7 @@ section.disable{
     border:2px solid rgba(255, 68, 0, 0);
     background-color: rgb(255, 255, 255);
     transition: ease-in-out 0.5s ;
-    color: rgb(255, 72, 0);
+    color: var(--primary);
     box-shadow: 5px 5px 20px rgba(255, 255, 255, 0.774),-5px -5px 20px rgba(255, 255, 255, 0.774);
 
 
@@ -215,7 +224,7 @@ section.disable{
 .section2 {
     width: 100%;
     min-height: fit-content;
-    /* height: 100vh; */
+    height: 100vh;
     background: rgb(255, 255, 255);
     margin: 0 0 ;
     padding: 2rem 2rem;
@@ -233,7 +242,7 @@ section.disable{
     }
 } */
 .section2 h1{
-    color: orangered;
+    color: var(--primary);
     font-size: 2rem;
     margin-top: 2rem;
 
@@ -278,7 +287,7 @@ section.disable{
     height: 100vh;
     background: white;
     margin: 0;
-    padding: 1rem 2rem;
+    padding: 2rem 2rem;
     display: flex;
     /* justify-content: space-around; */
     align-items: center;
@@ -290,7 +299,7 @@ section.disable{
 }
 
 .section3 h1{
-    color: orangered;
+    color: var(--primary);
     font-size: 2rem;
    
     
@@ -316,7 +325,7 @@ section.disable{
 }
 
 .section4 h1{
-    color: orangered;
+    color: var(--primary);
     font-size: 2rem;
     font-weight: 900;
     
@@ -340,7 +349,7 @@ section.disable{
 .icon{
     width:30px;
     height:30px;
-    background-color: orangered;
+    background-color: var(--primary);
     margin-right: 2rem;
     border-radius: 50%;
    
@@ -361,7 +370,7 @@ section.disable{
     height: 58px;
     opacity: 1;
     z-index: 10;
-    background-color: orangered;
+    background-color: var(--primary);
     box-shadow: 2px 2px 5px  rgba(255, 147, 108, 0.589),-2px -2px 5px  rgba(255, 144, 104, 0.521);
     border-radius: 29px;
     color: white;
@@ -401,11 +410,11 @@ padding: 0;
 
 
 .sac{
-   
+    fill:var(--primary);
     filter: invert(100);
 }
 .sac:hover{
-    box-shadow: 5px 5px 10px orangered;
+    box-shadow: 5px 5px 10px var(--primary);
 }
 
 .line1{

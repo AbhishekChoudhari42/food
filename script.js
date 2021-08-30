@@ -12,9 +12,41 @@ menu.addEventListener('click',function(){
     menulist.classList.toggle('slidedown')
     sec.classList.toggle('disable')
 })
+// var delay = document.querySelector('.delay');
+var menuA = document.querySelectorAll('.menulist a')
+menuA.forEach(element => {
+    element.addEventListener('click',function(){
+        menulist.classList.remove('slidedown')
+        menulist.style.transitionDelay = '0.5s'
+        // menulist.classList.add('delay')
+        menu.classList.toggle('cancel')
+    
+    
+    
+    })
+});
+menulist.style.transitionDelay = '0'
 
 
 
+
+
+
+
+var lastscroll = 0;
+var navbar = document.querySelector('.navigation-bar');
+window.addEventListener('scroll',function(){
+    var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+    if(scrollTop > lastscroll){
+        navbar.style.top = '-100%'
+    }
+    else{
+        navbar.style.top = '0'
+        
+
+    }
+    lastscroll = scrollTop;
+})
 
 const tl = gsap.timeline({default:{duration:1}});
 const tt = gsap.timeline({default:{duration:1}});
