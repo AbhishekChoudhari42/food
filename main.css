@@ -13,6 +13,8 @@ html{
 /*  */
 :root{
     --primary:orangered;
+    /* --primary:#ff7f2aff;
+    --secondary:#ff9955ff; */
 }
 
 a{
@@ -197,7 +199,7 @@ section.disable{
 }
 
 .section1 h1{
-    font-size: 2rem;
+    font-size: 1.45rem;
     color: rgb(255, 255, 255);
     margin:0;
 }
@@ -278,6 +280,7 @@ section.disable{
     flex-direction: column;
     padding-bottom: 2rem;
     
+    
 
 }
 
@@ -285,6 +288,7 @@ section.disable{
     background: rgb(255, 255, 255);
     margin: .5rem 0 ;
     padding:1rem;
+    padding-top: 0;
     /* height: 28vh; */
     min-height: fit-content;
     min-width: fit-content;
@@ -299,12 +303,39 @@ section.disable{
                  5px -5px 15px var(--shadow),
                 -5px -5px 15px var(--shadow) ;
 }
+/* .card{
+    margin-top: 0.5rem;
+} */
 
+
+
+.card1 ul{
+    padding: 0.5rem;
+    border-radius: 0.3rem;
+    background-color: #ff9955ff;
+
+    /* background-color: #ff7f2aff; */
+}
+.card1 b{
+    font-size: 0.9rem;
+    font-weight: 1rem;
+  
+}
+.card1 li{
+    font-weight: 500;
+    font-size: 0.8rem;
+    padding: 0.1rem;
+    /* margin-top: 0.5rem; */
+}
 .cards h4{
     font-size: 1rem;
     font-weight: 500;
 }
 
+
+.card3 li:nth-child(2){
+    margin-top: 1rem;
+}
 
 .subs{
    
@@ -316,6 +347,8 @@ section.disable{
 
   .subs img{
       width:300px;
+      pointer-events: none;
+      max-height: fit-content;
   }
   .griditem{
       padding: 1rem;
@@ -324,7 +357,19 @@ section.disable{
   }
  
 
+  .card3 ul{
+    position: relative;
+    background-color:#ff9955ff ;
+    height: 100px;
+    width: 100%;
+    border-radius: 0.2rem;
+    padding: 0.2rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction:column;
 
+}
 
 
 
