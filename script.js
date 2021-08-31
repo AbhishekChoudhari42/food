@@ -11,14 +11,13 @@ menu.addEventListener('click',function(){
     menu.classList.toggle('cancel')
     menulist.classList.toggle('slidedown')
     sec.classList.toggle('disable')
+
 })
-// var delay = document.querySelector('.delay');
 var menuA = document.querySelectorAll('.menulist a')
 menuA.forEach(element => {
     element.addEventListener('click',function(){
         menulist.classList.remove('slidedown')
-        menulist.style.transitionDelay = '0.5s'
-        // menulist.classList.add('delay')
+
         menu.classList.toggle('cancel')
     
     
@@ -61,15 +60,14 @@ tl.from(".navigation-bar .logo,.navigation-bar .menu,.menulist-desktop",1,{trans
 
 gsap.from('.section2 .card1 ',{
     scrollTrigger: ".card1",
-    transform:'translate(-4%,15%)',
-    x:50,
+    transform:'translate(0%,20%)',
     duration:1,
     opacity:0
 })
 
 gsap.from('.section2 .card2',{
     scrollTrigger: ".card2",
-    transform:'translate(4%,15%)',
+    transform:'translate(0%,30%)',
     duration:1,
     opacity:0
 
@@ -77,8 +75,7 @@ gsap.from('.section2 .card2',{
 
 gsap.from('.section2 .card3 ',{
     scrollTrigger: ".card3",
-    transform:'translate(-4%,15%)',
-    // x:50,
+    transform:'translate(0%,40%)',
     duration:1,
     opacity:0
 })
@@ -86,7 +83,6 @@ gsap.from('.section2 .card3 ',{
 gsap.from('.section3 h1 ',{
     scrollTrigger: ".section3 h1",
     transform:'translate(0%,20%)',
-    // x:50,
     duration:1.5,
     opacity:0
 })

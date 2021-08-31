@@ -10,6 +10,9 @@
  
 </head>
 <body>
+    <div class="ddd" style = "position: fixed; top: 90%; left: 50%; background-color: #ff7f2a; color: rgb(255, 255, 255); padding: 1rem; transform: translate(-50%,-50%); z-index: 1000;">
+        this website is currently under development
+    </div>
     <div  class="menulist">
         <h2><a href="#home">Home</a></h2>
         <h2><a href="#services">Services</a></h2>
@@ -44,7 +47,11 @@
 <section id="home" class="section1">
     <h1>Our Motto is to bestow <br> fresh quality food at your <br> door step in most friendly fares.</h1>
     <!-- <h3 style="transform: translate(150px, 7px);">SIGN UP</h3> -->
-    <h3>LOGIN</h3>
+    <div class="login">
+        <h3>SIGN-UP</h3> 
+        <h3> LOGIN</h3>
+    </div>
+    
    
 </section>
 
@@ -52,27 +59,36 @@
 <section id="services" class="section2">
     <h1>Services</h1>
     <div class="cards">
-        <div class="card1">
-            <h3>Food-Menu</h3>
-            <h4>
-                <ul>
-                <b>Per Plate Food items:</b>
-                <i>
-                     <li>Dal</li>
-                    <li>Sabji</li>
-                    <li>Rice</li>
-                    <li>Chappati-3</li>
-                    <li>Salad</li>
-                   <li> 2 special meals/months</li>
-                </i>
-                
+        <div  class="card1 card">
+            <div class="card-title">
+                <h3>Food-Menu</h3>
+            </div>
+            
 
-            </ul>
-        </h4>
+                <ul>
+                    <b>Per Plate Food items:</b>
+                    
+                        <li>Dal</li>
+                        <li>Sabji</li>
+                        <li>Rice</li>
+                        <li>Chappati-3</li>
+                        <li>Salad</li>
+                        <li> 2 special meals/months</li>
+                    
+                </ul>
+    
         </div>
-        <div class="card2">
-            <h3>Subscriptions :</h3>
-            <h4>
+        <div  class="card2 card">
+            <div class="card-title">
+                <h3>Subscriptions</h3>
+            </div>
+           
+            <div class="subs">
+                <img src="./subscription.png" alt="">
+               
+              </div>
+
+            <!-- <h4>
                 <table>
                     <tr>
                         <th>Meals/Day</th>
@@ -94,16 +110,19 @@
                         <td>3100&#8377;</td>
                     </tr>
                 </table>
-            </h4>
-        </div>
-        <div class="card3">
-            <h3>Others :</h3>
-            <h4>
+            </h4>-->
+        </div> 
+        <div class="card3 card">
+            <div class="card-title">
+                <h3>Other</h3>
+            </div>
+           
+            <!-- <h4>
                 <ul>
                 <li>Food-Delivery</li>
                 <li>Customer-Care</li>
             </ul>
-        </h4>
+        </h4> -->
         </div>
     </div>
 </section>
