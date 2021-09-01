@@ -47,7 +47,7 @@ section.disable{
 
 .menulist{
     width: 100%;
-    height: 100vh;
+    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -60,7 +60,10 @@ section.disable{
     background: var(--primary);
     /* backdrop-filter: blur(20px); */
     transform: translateY(-100%);
-    transition: 1s;
+    transition:1s cubic-bezier(0.445, 0.05, 0.55, 0.95) ;
+
+    /* transition:1s cubic-bezier(0.25, 0.46, 0.45, 0.94) ; */
+
    
 }
 .menulist.delay{
@@ -130,6 +133,8 @@ section.disable{
     align-items: center;
     flex-direction: column;
     z-index: 800;
+
+
 }
 
 .navigation-bar .menu span{
@@ -137,17 +142,20 @@ section.disable{
     height: 4px;
    background-color: white;
     border-radius: 1px;
-    transition: 0.5s;
+    /* transition:1s cubic-bezier(0.68, -0.55, 0.265, 1.55); */
+    transition:0.6s cubic-bezier(0.445, 0.05, 0.55, 0.95) ;
+    
 }
 
 /* ---cancel Class ---------- */
 .menu.cancel{
-   
-    transition:0.3s ;
+   will-change: transform;
+   transition:0.6s cubic-bezier(0.445, 0.05, 0.55, 0.95) ;
+
 }
 .menu.cancel .m1{
     
-    transform: rotate(45deg) translate(5px,7.5px);
+    transform: rotate(405deg) translate(5px,7.5px);
     background-color: rgb(255, 255, 255);
     border-radius: 3px;
     
@@ -160,7 +168,7 @@ section.disable{
 }
 .menu.cancel .m3{
     
-    transform: rotate(-45deg) translate(5px,-7.5px);
+    transform: rotate(-405deg) translate(5px,-7.5px);
     background-color: rgb(255, 255, 255);
     border-radius: 3px;
 
@@ -223,21 +231,29 @@ section.disable{
     
 }
 .section1 h3:hover{
-    border:2px solid rgba(255, 68, 0, 0);
+  
     background-color: rgb(255, 255, 255);
     transition: ease-in-out 0.5s ;
     color: var(--primary);
     box-shadow: 5px 5px 20px rgba(255, 255, 255, 0.774),-5px -5px 20px rgba(255, 255, 255, 0.774);
 
 }
-
+    .login :nth-child(1){
+        border: 2px solid var(--primary);
+    }
+    .login :nth-child(1):hover{
+        border: 2px solid white;
+    }
  .login h3:nth-child(2){
     margin-left: 0.5rem;
     background-color:transparent;
     border: 2px solid white;
     color:white;
 }
-
+.login h3:nth-child(2):hover{
+    background-color: white;
+    color: var(--primary);
+}
 
 
 /* --------------------------------------- */
@@ -532,9 +548,9 @@ abbr:hover{
     justify-content: center;
     align-items: center;
     position:fixed;
-    bottom: 0;
+    bottom: 5%;
     left: 0%;
-    margin: 0.7rem 0.7rem;
+    margin: 1rem 1rem;
     width: 58px;
     max-width: 400px;
     height: 58px;

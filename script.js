@@ -2,6 +2,7 @@ window.onload = function(){
     console.log('loaded')
 }
 
+
 var menu = document.querySelector('.menu');
 var menulist = document.querySelector('.menulist')
 var sec = document.querySelector('section')
@@ -24,7 +25,16 @@ menuA.forEach(element => {
     
     })
 });
-menulist.style.transitionDelay = '0'
+window.onresize - function(){
+   console.log('resized')
+    if(window.innerWidth > 720){
+        console.log('removed')
+        menulist.classList.remove('slidedown')
+    }
+}
+
+
+
 
 
 
