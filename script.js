@@ -67,7 +67,7 @@ gsap.from('.section2 .card1 ',{
 
 gsap.from('.section2 .card2',{
     scrollTrigger: ".card2",
-    transform:'translate(0%,30%)',
+    transform:'translate(0%,40%)',
     duration:1,
     opacity:0
 
@@ -75,23 +75,22 @@ gsap.from('.section2 .card2',{
 
 gsap.from('.section2 .card3 ',{
     scrollTrigger: ".card3",
-    transform:'translate(0%,40%)',
+    transform:'translate(0%,60%)',
     duration:1,
     opacity:0
 })
 
 gsap.from('.section3 h1 ',{
     scrollTrigger: ".section3 h1",
-    transform:'translate(0%,20%)',
+    transform:'translate(0%,-50%)',
     duration:1.5,
     opacity:0
 })
 
-gsap.from('.section3 h4 ',{
+gsap.from('.section3 h3 ',{
     scrollTrigger: ".section3 h4",
-    transform:'translate(0%,20%)',
-    // x:50,
-    duration:2,
+    transform:'translate(0%,50%)',
+    duration:2.5,
     opacity:0
 })
 

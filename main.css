@@ -199,8 +199,8 @@ section.disable{
 }
 
 .section1 h1{
-    font-size: 1.45rem;
-    color: rgb(255, 255, 255);
+    font-size: 1.5rem;
+    color: #ffffff;
     margin:0;
 }
 .login{
@@ -401,7 +401,8 @@ section.disable{
 
 .section3 {
     width: 100%;
-    height: 100vh;
+    /* height: 100vh; */
+    min-height: fit-content;
     background: white;
     margin: 0;
     padding: 2rem 2rem;
@@ -422,9 +423,55 @@ section.disable{
     
 
 }
-.section3 h4{
-    font-weight: 500; 
+.section3 h3{
+    font-weight: 500;
 }
+.about-info{
+    width: 90vw;
+    margin: 0 auto;
+    padding: 2rem;
+    background-color: rgb(250, 250, 250);
+    /* min-height: fit-content; */
+    border-radius: 0.5rem;
+    max-width: 1200px;
+}
+.why-us{
+    width: 90vw;
+    margin: 0 auto;
+    padding: 2rem;
+    background-color: rgb(250, 250, 250);
+    border-radius: 0.5rem;
+    max-width: 1200px;
+
+}
+.why-us-info{
+    display: grid;
+    
+
+    grid-template-columns: repeat(auto-fill,minmax(280px,3fr));
+}
+.why-us-info h3{
+    margin: 0.5rem;
+}
+.terms h6{
+    font-weight: 500;
+}
+abbr{
+    text-decoration: none;
+    cursor: pointer;
+    
+}
+abbr:hover{
+    border-bottom: 1px solid black;
+}
+
+
+
+
+
+
+
+/* ================ services =================== */
 .section4 {
     position: relative;
     width: 100%;
@@ -473,6 +520,11 @@ section.disable{
 
 }
 
+.terms{
+    width: 100%;
+    margin: 2rem;
+  
+}
 
 .cta{
     display: flex;

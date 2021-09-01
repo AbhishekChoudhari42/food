@@ -1,4 +1,11 @@
 @media (min-width:720px) {
+
+    .section1 h1{
+        font-size: 2.8rem;
+        color: rgb(255, 255, 255);
+        margin:0;
+    }
+
     .menulist-desktop{
         position: absolute;
         right: 2rem;
