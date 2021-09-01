@@ -548,7 +548,8 @@ abbr:hover{
     justify-content: center;
     align-items: center;
     position:fixed;
-    bottom: 5%;
+    bottom: 2%;
+    
     left: 0%;
     margin: 1rem 1rem;
     width: 58px;
